@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OpenIoT Framework | Enterprise IoT Framework for ESP32</title>
+
+    <meta name="description"
+        content="OpenIoT Framework is a modern, modular and production-ready IoT framework for ESP32, featuring OTA, Dashboard, REST API, MQTT, Cloud integration, and more.">
+
+    <meta name="keywords"
+        content="ESP32, IoT, Arduino, OTA, MQTT, REST API, Dashboard, OpenIoT Framework">
+
+    <meta name="author" content="Md. Golam Mostofa">
+
+    <meta property="og:title" content="OpenIoT Framework">
+    <meta property="og:description"
+        content="Production Ready IoT Framework for ESP32">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+	<link rel="icon" href="assets/images/OpenIoT_Favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <!-- ======================================== -->
+    <!-- Background -->
+    <!-- ======================================== -->
+
+    <div class="background-gradient"></div>
+
+    <canvas id="particles"></canvas>
+
+    <!-- ======================================== -->
+    <!-- Header -->
+    <!-- ======================================== -->
+
+    <header id="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="#" class="logo">
+
+                    <img src="assets/images/logo.svg" alt="OpenIoT">
+
+                    <span>OpenIoT</span>
+
+                </a>
+
+                <ul class="nav-links">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#features">Features</a></li>
+
+                    <li><a href="#modules">Modules</a></li>
+
+                    <li><a href="#docs">Documentation</a></li>
+
+                    <li><a href="#roadmap">Roadmap</a></li>
+
+                    <li><a href="https://github.com/YOUR_USERNAME/OpenIoT"
+                            target="_blank">GitHub</a></li>
+
+                </ul>
+
+                <div class="nav-buttons">
+
+                    <button id="themeToggle">
+
+                        🌙
+
+                    </button>
+
+                    <button id="mobileMenu">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ======================================== -->
+    <!-- Hero -->
+    <!-- ======================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-grid">
+
+            <div class="hero-left">
+
+                <div class="badge">
+
+                    🚀 Version 3.0 Alpha
+
+                </div>
+
+                <h1>
+
+                    Build Modern<br>
+
+                    ESP32 Applications
+
+                </h1>
+
+                <p>
+
+                    OpenIoT Framework is a production-ready framework
+                    for building scalable IoT applications with ESP32.
+
+                    Designed for developers, makers, startups,
+                    and enterprise solutions.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#installation" class="btn btn-primary">
+
+                        Get Started
+
+                    </a>
+
+                    <a href="#docs" class="btn btn-outline">
+
+                        Documentation
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h2>15+</h2>
+
+                        <span>Modules</span>
+
+                    </div>
+
+                    <div>
+
+                        <h2>50+</h2>
+
+                        <span>Examples</span>
+
+                    </div>
+
+                    <div>
+
+                        <h2>MIT</h2>
+
+                        <span>License</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <img src="assets/images/hero.svg"
+                    alt="ESP32 Illustration">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Trusted By -->
+    <!-- ======================================== -->
+
+    <section class="trusted">
+
+        <div class="container">
+
+            <p>
+
+                Built using modern technologies
+
+            </p>
+
+            <div class="trusted-grid">
+
+                <span>ESP32</span>
+
+                <span>Arduino</span>
+
+                <span>PlatformIO</span>
+
+                <span>GitHub</span>
+
+                <span>MQTT</span>
+
+                <span>REST API</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- ======================================== -->
+    <!-- Features -->
+    <!-- ======================================== -->
+
+    <section class="features" id="features">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">FEATURES</span>
+
+                <h2>Everything You Need to Build IoT Solutions</h2>
+
+                <p>
+                    OpenIoT combines modern software architecture with powerful
+                    ESP32 capabilities, allowing you to develop secure, scalable,
+                    and maintainable IoT applications.
+                </p>
+
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>High Performance</h3>
+                    <p>Optimized architecture with minimal RAM and Flash usage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📡</div>
+                    <h3>Network Ready</h3>
+                    <p>Integrated Wi-Fi, HTTP, MQTT, WebSocket and REST support.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h3>OTA Updates</h3>
+                    <p>Arduino OTA, GitHub OTA and HTTPS firmware updates.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Dashboard</h3>
+                    <p>Modern responsive device dashboard with real-time data.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h3>Security</h3>
+                    <p>Secure configuration, authentication and encrypted communication.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🧩</div>
+                    <h3>Modular</h3>
+                    <p>Enable only the modules your application requires.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Architecture -->
+    <!-- ======================================== -->
+
+    <section class="architecture">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">ARCHITECTURE</span>
+
+                <h2>Clean Layered Design</h2>
+
+            </div>
+
+            <div class="architecture-diagram">
+
+                <div class="layer">
+                    <h3>Application</h3>
+                    <p>Your ESP32 Project</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="layer">
+                    <h3>Framework</h3>
+                    <p>Lifecycle • Services • Events</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="layer">
+                    <h3>Core Services</h3>
+                    <p>Logger • Scheduler • Config • Storage</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="layer">
+                    <h3>Modules</h3>
+                    <p>WiFi • OTA • MQTT • Dashboard • REST</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="layer">
+                    <h3>ESP32 Platform</h3>
+                    <p>Arduino Core / ESP-IDF</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Modules -->
+    <!-- ======================================== -->
+
+    <section class="modules" id="modules">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">MODULES</span>
+
+                <h2>Powerful Built-in Components</h2>
+
+            </div>
+
+            <div class="module-grid">
+
+                <div class="module-card">
+                    <h3>Core</h3>
+                    <p>Framework lifecycle and dependency management.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>Logger</h3>
+                    <p>Professional logging with multiple output targets.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>Scheduler</h3>
+                    <p>Non-blocking task scheduling.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>Storage</h3>
+                    <p>Preferences, LittleFS and SD card support.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>Network</h3>
+                    <p>Wi-Fi, HTTP, HTTPS, DNS and mDNS services.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>Dashboard</h3>
+                    <p>Responsive embedded web dashboard.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>MQTT</h3>
+                    <p>Reliable cloud messaging.</p>
+                </div>
+
+                <div class="module-card">
+                    <h3>OTA</h3>
+                    <p>GitHub OTA, Arduino OTA and secure HTTPS updates.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Statistics -->
+    <!-- ======================================== -->
+
+    <section class="statistics">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h2 id="modulesCount">15+</h2>
+                    <span>Framework Modules</span>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="examplesCount">50+</h2>
+                    <span>Example Projects</span>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="docsCount">120+</h2>
+                    <span>Documentation Pages</span>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="releaseCount">v3.0</h2>
+                    <span>Current Development</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+<section id="github">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-tag">
+
+                GITHUB
+
+            </span>
+
+            <h2>
+
+                Live Repository Statistics
+
+            </h2>
+
+            <p>
+
+                Real-time information directly from GitHub.
+
+            </p>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2 id="githubStars">--</h2>
+
+                <span>Stars</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="githubForks">--</h2>
+
+                <span>Forks</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="githubIssues">--</h2>
+
+                <span>Issues</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="githubWatchers">--</h2>
+
+                <span>Watchers</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="githubVersion">--</h2>
+
+                <span>Latest Release</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="githubContributors">--</h2>
+
+                <span>Contributors</span>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+            <h3>Programming Languages</h3>
+
+            <div id="languageChart"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ======================================== -->
+    <!-- Code Example -->
+    <!-- ======================================== -->
+
+    <section class="quick-start">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">QUICK START</span>
+
+                <h2>Build Your First Application</h2>
+
+            </div>
+
+<pre><code>#include &lt;OpenIoT.h&gt;
+
+using namespace OIF;
+
+void setup()
+{
+    Framework.begin();
+}
+
+void loop()
+{
+    Framework.run();
+}</code></pre>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ======================================== -->
+    <!-- Dashboard Preview -->
+    <!-- ======================================== -->
+
+    <section class="dashboard-preview" id="dashboard">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    DASHBOARD
+                </span>
+
+                <h2>
+                    Built-in Device Dashboard
+                </h2>
+
+                <p>
+                    Monitor your device, update firmware, manage GPIO,
+                    inspect logs and configure your system from anywhere.
+                </p>
+
+            </div>
+
+            <div class="dashboard-window">
+
+                <div class="window-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-card">
+                        <h3>CPU Usage</h3>
+                        <h1>18%</h1>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Free Heap</h3>
+                        <h1>212 KB</h1>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>WiFi</h3>
+                        <h1>Connected</h1>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>OTA</h3>
+                        <h1>Ready</h1>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>MQTT</h3>
+                        <h1>Online</h1>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>REST API</h3>
+                        <h1>Enabled</h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Installation -->
+    <!-- ======================================== -->
+
+    <section id="installation" class="installation">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    INSTALLATION
+                </span>
+
+                <h2>
+                    Get Started in Minutes
+                </h2>
+
+            </div>
+
+<pre><code>git clone https://github.com/YOUR_USERNAME/OpenIoT.git
+
+cd OpenIoT
+
+Open with Arduino IDE or PlatformIO
+
+Build → Upload → Done!</code></pre>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Documentation -->
+    <!-- ======================================== -->
+
+    <section class="documentation" id="docs">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    DOCUMENTATION
+                </span>
+
+                <h2>
+                    Everything You Need
+                </h2>
+
+            </div>
+
+            <div class="docs-grid">
+
+                <div class="doc-card">
+                    📘
+                    <h3>Getting Started</h3>
+                </div>
+
+                <div class="doc-card">
+                    📦
+                    <h3>Installation</h3>
+                </div>
+
+                <div class="doc-card">
+                    🧩
+                    <h3>Modules</h3>
+                </div>
+
+                <div class="doc-card">
+                    💻
+                    <h3>Examples</h3>
+                </div>
+
+                <div class="doc-card">
+                    📖
+                    <h3>API Reference</h3>
+                </div>
+
+                <div class="doc-card">
+                    🚀
+                    <h3>OTA Guide</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Roadmap -->
+    <!-- ======================================== -->
+
+    <section id="roadmap" class="roadmap">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+
+                    ROADMAP
+
+                </span>
+
+                <h2>
+
+                    Future Development
+
+                </h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h3>Alpha</h3>
+                    <p>Framework Core</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Beta</h3>
+                    <p>Dashboard + OTA</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>RC</h3>
+                    <p>Cloud Integration</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Stable</h3>
+                    <p>Enterprise Release</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Community -->
+    <!-- ======================================== -->
+
+    <section class="community">
+
+        <div class="container">
+
+            <div class="community-box">
+
+                <h2>
+
+                    Join the OpenIoT Community
+
+                </h2>
+
+                <p>
+
+                    Contribute, report issues, request features,
+                    and help build the future of open-source IoT.
+
+                </p>
+
+                <a href="https://github.com/YOUR_USERNAME/OpenIoT"
+                    class="btn btn-primary">
+
+                    View on GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- Footer -->
+    <!-- ======================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h2>
+
+                        OpenIoT Framework
+
+                    </h2>
+
+                    <p>
+
+                        Production-ready IoT framework for ESP32.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Resources
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="#">Documentation</a></li>
+
+                        <li><a href="#">Examples</a></li>
+
+                        <li><a href="#">API</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Community
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="#">GitHub</a></li>
+
+                        <li><a href="#">Issues</a></li>
+
+                        <li><a href="#">Discussions</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 OpenIoT Framework
+
+                Developed by Md. Golam Mostofa
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/theme.js"></script>
+
+    <script src="assets/js/github.js"></script>
+
+    <script src="assets/js/particles.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

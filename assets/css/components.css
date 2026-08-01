@@ -1,0 +1,498 @@
+/*==================================================
+    OpenIoT Framework
+    components.css
+    Reusable UI Components
+==================================================*/
+
+/*==================================================
+    Cards
+==================================================*/
+
+.card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/*==================================================
+    Status Badges
+==================================================*/
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.badge-primary{
+
+    background:rgba(79,140,255,.15);
+
+    color:var(--primary);
+
+}
+
+.badge-success{
+
+    background:rgba(34,197,94,.15);
+
+    color:var(--success);
+
+}
+
+.badge-warning{
+
+    background:rgba(245,158,11,.15);
+
+    color:var(--warning);
+
+}
+
+.badge-danger{
+
+    background:rgba(239,68,68,.15);
+
+    color:var(--danger);
+
+}
+
+/*==================================================
+    Chips
+==================================================*/
+
+.chip{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    font-size:13px;
+
+}
+
+/*==================================================
+    Progress Bar
+==================================================*/
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#1b2435;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-value{
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    border-radius:999px;
+
+}
+
+/*==================================================
+    Alerts
+==================================================*/
+
+.alert{
+
+    padding:18px 24px;
+
+    border-radius:14px;
+
+    margin:20px 0;
+
+}
+
+.alert-info{
+
+    background:rgba(79,140,255,.08);
+
+    border-left:4px solid var(--primary);
+
+}
+
+.alert-success{
+
+    background:rgba(34,197,94,.08);
+
+    border-left:4px solid var(--success);
+
+}
+
+.alert-warning{
+
+    background:rgba(245,158,11,.08);
+
+    border-left:4px solid var(--warning);
+
+}
+
+.alert-danger{
+
+    background:rgba(239,68,68,.08);
+
+    border-left:4px solid var(--danger);
+
+}
+
+/*==================================================
+    Tabs
+==================================================*/
+
+.tabs{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.tab{
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.tab.active{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+    Accordion
+==================================================*/
+
+.accordion{
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.accordion-item{
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.accordion-header{
+
+    padding:22px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.accordion-content{
+
+    padding:0 22px 22px;
+
+    display:none;
+
+}
+
+.accordion-item.active .accordion-content{
+
+    display:block;
+
+}
+
+/*==================================================
+    Table
+==================================================*/
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.table th{
+
+    text-align:left;
+
+    padding:18px;
+
+    background:#111827;
+
+}
+
+.table td{
+
+    padding:18px;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+/*==================================================
+    Tooltip
+==================================================*/
+
+.tooltip{
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.tooltip::after{
+
+    content:attr(data-tooltip);
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:120%;
+
+    transform:translateX(-50%);
+
+    padding:8px 12px;
+
+    background:#111827;
+
+    border-radius:8px;
+
+    white-space:nowrap;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    font-size:12px;
+
+}
+
+.tooltip:hover::after{
+
+    opacity:1;
+
+}
+
+/*==================================================
+    Floating Action Button
+==================================================*/
+
+.fab{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    color:#fff;
+
+    box-shadow:0 15px 35px rgba(79,140,255,.35);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.fab:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*==================================================
+    Utility Classes
+==================================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:10px;
+
+}
+
+.mt-2{
+
+    margin-top:20px;
+
+}
+
+.mt-3{
+
+    margin-top:30px;
+
+}
+
+.mt-4{
+
+    margin-top:40px;
+
+}
+
+.mb-1{
+
+    margin-bottom:10px;
+
+}
+
+.mb-2{
+
+    margin-bottom:20px;
+
+}
+
+.mb-3{
+
+    margin-bottom:30px;
+
+}
+
+.mb-4{
+
+    margin-bottom:40px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+
+
+
+/*=============================================
+    GitHub Language Statistics
+=============================================*/
+
+.language-row{
+
+    margin:20px 0;
+
+}
+
+.language-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}

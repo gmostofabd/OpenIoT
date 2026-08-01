@@ -1,0 +1,546 @@
+/*==================================================
+    OpenIoT Framework
+    animations.css
+==================================================*/
+
+/*=========================================
+    Fade In
+=========================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/*=========================================
+    Fade Up
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+    Fade Down
+=========================================*/
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+    Fade Left
+=========================================*/
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*=========================================
+    Fade Right
+=========================================*/
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*=========================================
+    Floating
+=========================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*=========================================
+    Pulse
+=========================================*/
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*=========================================
+    Rotate
+=========================================*/
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*=========================================
+    Gradient Animation
+=========================================*/
+
+@keyframes gradient{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/*=========================================
+    Shine Effect
+=========================================*/
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:120%;
+
+    }
+
+}
+
+/*=========================================
+    Glow
+=========================================*/
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 15px rgba(79,140,255,.2);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 35px rgba(79,140,255,.7);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 15px rgba(79,140,255,.2);
+
+    }
+
+}
+
+/*=========================================
+    Scale In
+=========================================*/
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*=========================================
+    Slide In Bottom
+=========================================*/
+
+@keyframes slideBottom{
+
+    from{
+
+        transform:translateY(100px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/*=========================================
+    Continuous Background
+=========================================*/
+
+.background-gradient{
+
+    background-size:300% 300%;
+
+    animation:gradient 15s ease infinite;
+
+}
+
+/*=========================================
+    Hero Animation
+=========================================*/
+
+.hero-left{
+
+    animation:fadeRight 1s ease;
+
+}
+
+.hero-right{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+/*=========================================
+    Cards
+=========================================*/
+
+.feature-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.module-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.doc-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.stat-card{
+
+    animation:scaleIn .8s ease;
+
+}
+
+/*=========================================
+    Hover Animations
+=========================================*/
+
+.feature-card:hover{
+
+    animation:pulse .5s;
+
+}
+
+.module-card:hover{
+
+    animation:pulse .5s;
+
+}
+
+.doc-card:hover{
+
+    animation:pulse .5s;
+
+}
+
+/*=========================================
+    Buttons
+=========================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+}
+
+.btn:hover::before{
+
+    animation:shine .7s;
+
+}
+
+/*=========================================
+    Logo
+=========================================*/
+
+.logo img:hover{
+
+    animation:rotate 2s linear infinite;
+
+}
+
+/*=========================================
+    Floating Badge
+=========================================*/
+
+.badge{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/*=========================================
+    Statistics
+=========================================*/
+
+.stat-card:hover{
+
+    animation:glow 1s infinite;
+
+}
+
+/*=========================================
+    Timeline
+=========================================*/
+
+.timeline-item{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/*=========================================
+    Footer
+=========================================*/
+
+footer{
+
+    animation:fadeIn 1.5s;
+
+}
+
+/*=========================================
+    Scroll Reveal Classes
+=========================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    transition:1s;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    transition:1s;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
