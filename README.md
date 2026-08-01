@@ -19,53 +19,14 @@
 ---
 
 
-
-
-\[!\[License](https://img.shields.io/github/license/gmostofabd/OpenIoT?style=for-the-badge)](LICENSE)
-
-\[!\[Release](https://img.shields.io/github/v/release/gmostofabd/OpenIoT?style=for-the-badge)](../../releases)
-
-\[!\[GitHub Stars](https://img.shields.io/github/stars/gmostofabd/OpenIoT?style=for-the-badge)](../../stargazers)
-
-\[!\[Forks](https://img.shields.io/github/forks/gmostofabd/OpenIoT?style=for-the-badge)](../../network)
-
-\[!\[Issues](https://img.shields.io/github/issues/gmostofabd/OpenIoT?style=for-the-badge)](../../issues)
-
-\[!\[Pull Requests](https://img.shields.io/github/issues-pr/gmostofabd/OpenIoT?style=for-the-badge)](../../pulls)
-
-
-
-<img src="assets/images/banner.png" width="100%">
-
-
-
-\*\*Designed for developers, engineering students, researchers, educators, and industrial IoT applications.\*\*
-
-
-
-</div>
-
-
-
-\---
-
-
-
-\# 📖 About OpenIoT
-
+# 📖 About OpenIoT
 
 
 OpenIoT Framework is a \*\*professional modular IoT framework\*\* built for \*\*ESP32\*\* and \*\*ESP8266\*\*, designed to simplify the development of connected embedded systems.
 
-
-
 Unlike traditional Arduino projects where every application is developed independently, OpenIoT provides a \*\*structured, reusable, scalable, and production-ready architecture\*\* that allows developers to focus on building applications instead of rewriting infrastructure.
 
-
-
 The framework combines modern software engineering practices with embedded development, making it suitable for:
-
-
 
 \- Academic projects
 
@@ -91,7 +52,7 @@ The framework combines modern software engineering practices with embedded devel
 
 
 
-\# ✨ Features
+# ✨ Features
 
 
 
@@ -203,7 +164,7 @@ ESP32 / ESP8266 Hardware
 
 
 
-\# 🚀 Quick Start
+# 🚀 Quick Start
 
 
 
@@ -239,7 +200,7 @@ Releases
 
 
 
-\## Basic Example
+## Basic Example
 
 
 
@@ -279,7 +240,7 @@ void loop()
 
 
 
-\# 📂 Repository Structure
+# 📂 Repository Structure
 
 
 
@@ -349,7 +310,7 @@ OpenIoT/
 
 
 
-\# 📚 Documentation
+# 📚 Documentation
 
 
 
@@ -413,7 +374,7 @@ https://gmostofabd.github.io/OpenIoT/
 
 
 
-\# 💻 Examples
+# 💻 Examples
 
 
 
@@ -461,7 +422,7 @@ examples/
 
 
 
-\# 📦 Modules
+# 📦 Modules
 
 
 
@@ -495,7 +456,7 @@ examples/
 
 
 
-\# 🌍 Supported Platforms
+# 🌍 Supported Platforms
 
 
 
