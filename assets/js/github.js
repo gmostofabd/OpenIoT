@@ -10,7 +10,7 @@
 /*
     CHANGE THESE TO YOUR REPOSITORY
 */
-const GITHUB_OWNER = "YOUR_USERNAME";
+const GITHUB_OWNER = "gmostofabd";
 const GITHUB_REPO = "OpenIoT";
 
 const API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
