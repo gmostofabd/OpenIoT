@@ -571,6 +571,18 @@ examples/
 
 
 
+| Example | Source              | Firmware                                                            |
+| ------- | ------------------- | ------------------------------------------------------------------- |
+| Blink   | `examples/01_Blink` | [Download BIN](examples/01_Blink/firmware/OpenIoT_Blink_v1.0.0.bin) |
+| WiFi    | `examples/02_WiFi`  | [Download BIN](examples/02_WiFi/firmware/OpenIoT_WiFi_v1.0.0.bin)   |
+| OTA     | `examples/07_OTA`   | [Download BIN](examples/07_OTA/firmware/OpenIoT_OTA_v1.0.0.bin)     |
+
+
+
+
+
+
+
 \# 🤝 Contributing
 
 
